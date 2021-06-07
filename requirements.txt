@@ -1,11 +1,2 @@
 tensorflow
-cupy
-pillow==7.1.1 
-cdflib==0.3.17
-pysftp==0.2.8
-openpyxl==3.0.3
-xlrd==1.2.0
-lxml==4.6.2
-zeep==3.4.0
-drms
-glymur
+cupy-cuda112
