@@ -12,10 +12,17 @@ on Linux:
 	  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 	  bash Miniconda3-latest-Linux-x86.sh
 
+install CUDA:
+    https://developer.nvidia.com/cuda-downloads?target_os=Linux
+    
+    
 on MacOS:
 
 	  curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 	  bash Miniconda3-latest-MacOSX-x86_64.sh
+	  
+	  
+	  
 
 go to a directory of your choice
 
