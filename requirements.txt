@@ -1,3 +1,0 @@
-tensorflow
-cupy-cuda112
-scikit-learn

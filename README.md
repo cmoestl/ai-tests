@@ -1,6 +1,8 @@
 # ai-tests
 
 
+An environment for deep learning with tensorflow/keras and test scripts.
+
 ---
 
 ## Installation 
@@ -13,8 +15,6 @@ on Linux:
 	  bash Miniconda3-latest-Linux-x86.sh
 
 install CUDA:
-    https://developer.nvidia.com/cuda-downloads?target_os=Linux
-    
     
 on MacOS:
 
@@ -27,18 +27,59 @@ on MacOS:
 go to a directory of your choice
 
 	  git clone https://github.com/cmoestl/ai-tests
+
+
 	  
 
-Create a conda environment using the environment.yml and requirements.txt file in the heliocats root directory, and activate the environment in between:
+Create a conda environment using the environment.yml in the repository root directory, 
+for NVIDIA GPU usage, installation of CUDA is included.
 
 	  conda env create -f environment.yml
 
-	  conda activate helio
+
+This file looks like:
+
+name: ait2
+dependencies:
+  - python==3.9.5
+  - cudatoolkit 
+  - pip
+  - jupyterlab
+  - numpy
+  - numba
+  - matplotlib
+  - pandas
+  - seaborn
+  - tensorflow
+  - keras
+  - scikit-learn
+  
+
+
+
+Activate the environment:
+
+	  conda activate ait2
+   
+
+Run scripts.
+
+For Keras examples see:  https://github.com/keras-team/keras-io/tree/master/examples
+
+   
+---   
+
+not necessary so far, add packages over pip 
 
 	  pip install -r requirements.txt
+	
+    
 	  
 	  
 Export dependencies:	  
 
     conda list --export > environment2.yml
     pip freeze > requirements2.txt
+    
+    
+Links: https://anaconda.org/anaconda/cudatoolkit
